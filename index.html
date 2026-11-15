@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Invoice Checker PH</title>
+<meta name="description" content="Check in one minute if the BIR e-invoicing rule (RMC 98-2026) covers your business by December 31, 2026.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">E-Invoice Checker PH</p>
+    <button type="button" id="lang" class="link"></button>
+  </header>
+  <h1 id="title"></h1>
+  <p id="intro" class="muted"></p>
+  <p id="days" class="days"></p>
+
+  <form id="form" novalidate>
+    <div id="questions"></div>
+    <p id="error" class="error" hidden></p>
+    <button type="submit" id="check" class="primary"></button>
+  </form>
+
+  <section id="result" hidden>
+    <h2 id="verdict"></h2>
+    <h3 id="whyTitle"></h3>
+    <ul id="reasons"></ul>
+    <h3 id="todoTitle"></h3>
+    <ol id="todo"></ol>
+    <p id="confirm" class="confirm"></p>
+    <button type="button" id="again" class="secondary"></button>
+  </section>
+
+  <footer>
+    <h3 id="sourcesTitle"></h3>
+    <ul id="sources"></ul>
+    <p id="disclaimer" class="muted small"></p>
+  </footer>
+</main>
+<script src="rules.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
