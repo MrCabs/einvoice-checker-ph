@@ -4,12 +4,48 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>E-Invoice Checker PH</title>
-<meta name="description" content="Check in one minute if the BIR e-invoicing rule (RMC 98-2026) covers your business by December 31, 2026.">
+<title>BIR E-Invoicing Checker: Am I covered by Dec 31, 2026? (RMC 98-2026)</title>
+<meta name="description" content="Free 1-minute check: does the BIR e-invoicing rule (RMC 98-2026) cover your business by December 31, 2026? Kailangan ba ng e-invoice? English and Tagalog.">
+<link rel="canonical" href="https://mrcabs.github.io/einvoice-checker-ph/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mrcabs.github.io/einvoice-checker-ph/">
+<meta property="og:title" content="Do I need e-invoicing by December 31?">
+<meta property="og:description" content="Free 1-minute check based on BIR RMC 98-2026. 4 questions, English and Tagalog. Answers stay on your phone.">
+<meta property="og:image" content="https://mrcabs.github.io/einvoice-checker-ph/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Do I need e-invoicing by December 31?">
+<meta name="twitter:description" content="Free 1-minute check based on BIR RMC 98-2026. English and Tagalog.">
+<meta name="twitter:image" content="https://mrcabs.github.io/einvoice-checker-ph/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"E-Invoice Checker PH",
+"url":"https://mrcabs.github.io/einvoice-checker-ph/","applicationCategory":"BusinessApplication","operatingSystem":"Any",
+"inLanguage":["en","tl"],"isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"PHP"},
+"description":"Checks if the BIR e-invoicing rule, Revenue Memorandum Circular No. 98-2026, covers a Philippine business by December 31, 2026."}
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="app"></div>
+<div id="app"><div class="screen start">
+  <header class="bar wrap"><span class="brand">E-Invoice Checker PH</span></header>
+  <main class="start-body wrap">
+    <div class="start-main">
+      <span class="days">BIR deadline: December 31, 2026</span>
+      <h1>Do I need e-invoicing by December 31?</h1>
+      <p class="intro">BIR's new rule, RMC 98-2026, moves some businesses from paper invoices to electronic invoices. Answer 4 questions to see if it covers you.</p>
+      <ul class="bullets"><li>About 1 minute</li><li>Your answers stay on your phone</li><li>Based on the official BIR circular</li></ul>
+    </div>
+    <aside class="qlist d-only">
+      <h2>The 4 questions</h2>
+      <div class="qrow"><span class="qnum">1</span>How much are your gross sales in a year?</div>
+      <div class="qrow"><span class="qnum">2</span>Do you sell online?</div>
+      <div class="qrow"><span class="qnum">3</span>How do you make invoices now?</div>
+      <div class="qrow"><span class="qnum">4</span>Is your business under the BIR Large Taxpayers Service?</div>
+    </aside>
+  </main>
+</div></div>
 <dialog id="coffee" class="coffee" aria-labelledby="coffeeTitle"></dialog>
 <script src="rules.js"></script>
 <script src="data.js"></script>
