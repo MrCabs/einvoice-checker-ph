@@ -76,7 +76,7 @@ const opt = (p, text) => p.getByRole('button', { name: text, exact: true }).clic
     await p.getByRole('button', { name: 'Buy me a coffee' }).click();
     const dlg = p.getByRole('dialog');
     await dlg.waitFor();
-    assert.ok(await dlg.locator('img').evaluate(i => i.complete && i.naturalWidth > 0), 'QR image loads');
+    assert.ok(await dlg.locator('img').evaluate(i => (i.complete && i.naturalWidth > 0) || new Promise(r => { i.onload = () => r(i.naturalWidth > 0); i.onerror = () => r(false); })), 'QR image loads');
     assert.equal(await dlg.getByText('Card or PayPal').count(), 0, 'Ko-fi hidden while no link');
     assert.ok(await dlg.getByText('KE****H PA*L C.').isVisible());
     await noScroll(p, `${label} coffee`);
